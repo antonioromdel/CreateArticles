@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear articulos</title>
+    <link rel="stylesheet" href="../assets/reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="layaout">
+
+        <section class="layaout__container-form">
+            <form action="" class="form__create">
+
+                <div class="create__container">
+                    <label for="title" class="create__label">Precio</label>
+                    <input type="number" id="title" required class="create__input">
+                </div>
+                <div class="create__container">
+                    <label for="subtitle" class="create__label">Nombre Artículo</label>
+                    <input type="text" id="subtitle" required class="create__input">
+                </div>
+                <div class="create__container">
+                    <label for="description" class="create__label">Descripcion</label>
+                    <textarea id="description" required class="create__input"></textarea>
+                </div>
+
+                <input type="submit" value="Crear artículo" class="create__btn">
+                <input type="reset" value="Reestablecer" class="create__btn">
+                <input type="reset" value="Vaciar Carrito" class="create__btn" id="vaciarCarrito">
+            </form>
+
+        </section>
+
+
+        <section class="layaout__articles">
+
+            <article class="layaout__card" id=${articlesArray.indexOf(article)}>
+                <header class="card__header">
+                    <p class="header__author"></p>
+                </header>
+                <div class="card__content">
+                    <h2 class="content__title"></h2>
+                    <p class="content__description">
+                       
+                    </p>
+    
+                    <button class="content__btn"></button>
+                </div>
+            </article>
+        </section>
+        
+
+    </div>
+</body>
+</html>
